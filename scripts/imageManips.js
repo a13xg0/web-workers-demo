@@ -24,10 +24,11 @@ function manipulate(type, r, g, b, a) {
   function makePixelGreyScale(r, g, b, a) {
     var y;
     y = (0.3 * r) + (0.59 * g) + (0.11 * b);
-    r = y;
-    g = y;
-    b = y;
-    return [r, g, b, a];
+    // r = y;
+    // g = y;
+    // b = y;
+    // return [r, g, b, a];
+    return [y, y, y, a];
   };
 
   function makePixelVibrant(r, g, b, a) {
